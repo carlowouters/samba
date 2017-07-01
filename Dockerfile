@@ -20,4 +20,4 @@ COPY samba.sh /usr/bin/
 
 EXPOSE 137/udp 138/udp 139 445
 
-ENTRYPOINT ["samba.sh"]
+ENTRYPOINT ["/usr/bin/samba.sh"]
