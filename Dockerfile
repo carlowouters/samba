@@ -6,5 +6,5 @@ MAINTAINER Carlo Wouters <carlo.wouters@gmail.com>
 
 COPY smb.conf /etc/samba/
 
-# ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
 
