@@ -15,7 +15,8 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
 VOLUME ["/etc/samba"]
 
 COPY smb.conf /etc/samba/smb.conf
-COPY samba.sh /usr/bin/
+COPY samba.sh /usr/bin/samba.sh
+RUN chmod 775 /usr/bin/samba.sh
 
 
 EXPOSE 137/udp 138/udp 139 445
